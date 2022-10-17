@@ -16,6 +16,11 @@
 		19D9A58A28F9006200FC2C3F /* ModelHaking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D9A58928F9006200FC2C3F /* ModelHaking.swift */; };
 		19D9A58C28F9016B00FC2C3F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D9A58B28F9016B00FC2C3F /* DetailView.swift */; };
 		19D9A59028F9023100FC2C3F /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D9A58F28F9023100FC2C3F /* WebView.swift */; };
+		19D9A59328F91F5300FC2C3F /* LoremSwiftum in Frameworks */ = {isa = PBXBuildFile; productRef = 19D9A59228F91F5300FC2C3F /* LoremSwiftum */; };
+		19D9A5B928F9CD0700FC2C3F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D9A5B828F9CD0700FC2C3F /* Home.swift */; };
+		19D9A5BC28F9CDBE00FC2C3F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D9A5BB28F9CDBE00FC2C3F /* ViewModel.swift */; };
+		19D9A5BF28FA4BDE00FC2C3F /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D9A5BE28FA4BDD00FC2C3F /* ModelView.swift */; };
+		19D9A5C128FA4E4B00FC2C3F /* Presentacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D9A5C028FA4E4B00FC2C3F /* Presentacion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,10 @@
 		19D9A58928F9006200FC2C3F /* ModelHaking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHaking.swift; sourceTree = "<group>"; };
 		19D9A58B28F9016B00FC2C3F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		19D9A58F28F9023100FC2C3F /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		19D9A5B828F9CD0700FC2C3F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		19D9A5BB28F9CDBE00FC2C3F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		19D9A5BE28FA4BDD00FC2C3F /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelView.swift; sourceTree = "<group>"; };
+		19D9A5C028FA4E4B00FC2C3F /* Presentacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentacion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D9A59328F91F5300FC2C3F /* LoremSwiftum in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +56,7 @@
 		19D9A56828F8EA7800FC2C3F = {
 			isa = PBXGroup;
 			children = (
+				19D9A5BD28FA4BB900FC2C3F /* Project */,
 				19D9A58628F8ED6200FC2C3F /* Views */,
 				19D9A58528F8ED5B00FC2C3F /* Models */,
 				19D9A57328F8EA7800FC2C3F /* HackerNews */,
@@ -93,11 +104,38 @@
 		19D9A58628F8ED6200FC2C3F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				19D9A5BA28F9CD1100FC2C3F /* SwiftBeta - pokemons */,
+				19D9A5B728F9CC4A00FC2C3F /* Haking */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		19D9A5B728F9CC4A00FC2C3F /* Haking */ = {
+			isa = PBXGroup;
+			children = (
 				19D9A58328F8EBE100FC2C3F /* HomeView.swift */,
 				19D9A58B28F9016B00FC2C3F /* DetailView.swift */,
 				19D9A58F28F9023100FC2C3F /* WebView.swift */,
 			);
-			path = Views;
+			path = Haking;
+			sourceTree = "<group>";
+		};
+		19D9A5BA28F9CD1100FC2C3F /* SwiftBeta - pokemons */ = {
+			isa = PBXGroup;
+			children = (
+				19D9A5B828F9CD0700FC2C3F /* Home.swift */,
+				19D9A5BB28F9CDBE00FC2C3F /* ViewModel.swift */,
+			);
+			path = "SwiftBeta - pokemons";
+			sourceTree = "<group>";
+		};
+		19D9A5BD28FA4BB900FC2C3F /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				19D9A5BE28FA4BDD00FC2C3F /* ModelView.swift */,
+				19D9A5C028FA4E4B00FC2C3F /* Presentacion.swift */,
+			);
+			path = Project;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,6 +154,9 @@
 			dependencies = (
 			);
 			name = HackerNews;
+			packageProductDependencies = (
+				19D9A59228F91F5300FC2C3F /* LoremSwiftum */,
+			);
 			productName = HackerNews;
 			productReference = 19D9A57128F8EA7800FC2C3F /* HackerNews.app */;
 			productType = "com.apple.product-type.application";
@@ -144,6 +185,9 @@
 				Base,
 			);
 			mainGroup = 19D9A56828F8EA7800FC2C3F;
+			packageReferences = (
+				19D9A59128F91F5300FC2C3F /* XCRemoteSwiftPackageReference "LoremSwiftum" */,
+			);
 			productRefGroup = 19D9A57228F8EA7800FC2C3F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -171,11 +215,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				19D9A58428F8EBE100FC2C3F /* HomeView.swift in Sources */,
+				19D9A5BC28F9CDBE00FC2C3F /* ViewModel.swift in Sources */,
 				19D9A58C28F9016B00FC2C3F /* DetailView.swift in Sources */,
 				19D9A57728F8EA7800FC2C3F /* ContentView.swift in Sources */,
+				19D9A5BF28FA4BDE00FC2C3F /* ModelView.swift in Sources */,
 				19D9A58A28F9006200FC2C3F /* ModelHaking.swift in Sources */,
 				19D9A57528F8EA7800FC2C3F /* HackerNewsApp.swift in Sources */,
 				19D9A58828F8ED8500FC2C3F /* NetworkManager.swift in Sources */,
+				19D9A5C128FA4E4B00FC2C3F /* Presentacion.swift in Sources */,
+				19D9A5B928F9CD0700FC2C3F /* Home.swift in Sources */,
 				19D9A59028F9023100FC2C3F /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +434,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		19D9A59128F91F5300FC2C3F /* XCRemoteSwiftPackageReference "LoremSwiftum" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukaskubanek/LoremSwiftum.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		19D9A59228F91F5300FC2C3F /* LoremSwiftum */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19D9A59128F91F5300FC2C3F /* XCRemoteSwiftPackageReference "LoremSwiftum" */;
+			productName = LoremSwiftum;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 19D9A56928F8EA7800FC2C3F /* Project object */;
 }
